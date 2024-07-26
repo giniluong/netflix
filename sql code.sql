@@ -4,6 +4,7 @@
 /** EXPLORATORY DATA ANALYSIS **/
 
 
+
 -- Check the number of unique users in the dataset
 
 SELECT COUNT(DISTINCT user_id) AS UniqueUserIDs
@@ -37,8 +38,8 @@ ORDER BY NumDevices DESC
 
 SELECT
 	min(age) as MinAge,
-    avg(age) AS AvgAge,
-    max(age) as MaxAge
+	avg(age) AS AvgAge,
+	max(age) as MaxAge
 FROM NetflixUserbase
 
 
@@ -52,6 +53,7 @@ ORDER BY monthly_revenue ASC
 
 /** DATA ANALYSIS **/
 
+	
 
 -- #1: Users with Premium subscriptions generate higher monthly revenue compared to those with Base or Standard
 
@@ -80,12 +82,12 @@ ORDER BY AvgAgeSubType DESC
 -- #4: Mid adults (age 35-42) generate higher monthly revenue compared to young adults (age 26-34) and mature adults (age 43-51)
 
 SELECT CASE
-		    WHEN age <= 34 then 'Young Adults'
+	WHEN age <= 34 then 'Young Adults'
         WHEN age BETWEEN 35 AND 42 THEN 'Mid Adults'
         WHEN age >= 43 THEN 'Mature Adults'
       END AS AgeBracket,
       SUM(monthly_revenue) AS SumRevenueAge
-from NetflixUserbase
+FROM NetflixUserbase
 GROUP BY AgeBracket
 ORDER BY SumRevenueAge DESC
 
@@ -97,7 +99,7 @@ ORDER BY SumRevenueAge DESC
    Australia & Oceania: Australia */
 
 SELECT CASE
-		WHEN country IN('Canada', 'United States', 'Mexico') THEN 'North America'
+	WHEN country IN('Canada', 'United States', 'Mexico') THEN 'North America'
         WHEN country IN('United Kingdom', 'Spain', 'Italy', 'Germany', 'France') THEN 'Europe'
         WHEN country = 'Brazil' THEN 'South America'
         WHEN country = 'Australia' THEN 'Australia & Oceania'
