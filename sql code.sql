@@ -110,3 +110,6 @@ GROUP BY WorldRegions
 ORDER BY SumRevenueRegion DESC
 
 
+
+
+
