@@ -7,3 +7,4 @@ This data analysis project aims to offer insights into how user information infl
 
 ### Data Source
 
+The dataset used is the "Netflix Userbase.csv" file
