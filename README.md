@@ -14,8 +14,10 @@ The dataset used is the "Netflix Userbase.csv" file from Kaggle. The dataset doe
 
 EDA involved exploring the user data to answer key questions, such as: 
 
-- Does subscription type influence monthly revenue?
-- Is there a correlation between device types and monthly revenue?
-- Are older users more likely to subscribe to Premium plans than younger ones?
-- Do older users generate more monthly revenue compared to younger ones?
-- Is there a relationship between the region where the user is located and monthly revenue?
+- What countries are the users located in?
+- What type of devices are used to watch Netflix?
+- What are the price points of the subscription models?
+
+
+### Data Analysis
+
