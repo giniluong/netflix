@@ -71,7 +71,7 @@ GROUP BY device
 ORDER BY AvgRevenueDevice DESC
 
 
--- #3: On average older users are more likely to subscribe to Premium plans compared to younger users
+-- #3: On average older users are more likely to subscribe to Premium plans than younger users
 
 SELECT subscription_type, AVG(age) AS AvgAgeSubType
 FROM NetflixUserbase
@@ -79,7 +79,7 @@ GROUP BY subscription_type
 ORDER BY AvgAgeSubType DESC
 
 
--- #4: Mid adults (age 35-42) generate higher monthly revenue compared to young adults (age 26-34) and mature adults (age 43-51)
+-- #4: Mid adults (age 35-42) generate higher monthly revenue than young adults (age 26-34) and mature adults (age 43-51)
 
 SELECT CASE
 	WHEN age <= 34 then 'Young Adults'
