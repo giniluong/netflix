@@ -41,5 +41,6 @@ EDA involved exploring the user data to answer key questions, such as:
 
 2) There are four different devices used to access Netflix: Smart TVs, laptops, smartphones, and tablets. Smart TVs and laptops are categorized as desktops, while smartphones and tablets are categorized as mobile devices. Analyzing the data shows no correlation between monthly revenue and device types, as laptops generate the highest revenue, whereas Smart TVs generate the lowest.
 
-3) 
+3) Analyzing the average age of users for each subscription model reveals that the ages are quite similar, around 38 or 39 years. Interestingly, Premium users have the lowest average age, while Standard users have the highest average age.
 
+4) 
