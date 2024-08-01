@@ -2,8 +2,7 @@
 
 ### Project Overview
 
-This data analysis project aims to offer insights into how user information influences Netflix's monthly revenue. By examining various aspects of user data, we seek to identify trends, make data-driven recommendations, and gain a deeper understanding of Netflix and its user base.
-
+This data analysis project aims to offer insights into how user information influences Netflix's monthly revenue. I also examine various aspects of the data to identify trends and better understand Netflix and its user base.
 
 ### Data Source
 
@@ -12,7 +11,7 @@ The dataset used is the "Netflix Userbase.csv" file from Kaggle. The dataset doe
 
 ### Exploratory Data Analysis
 
-EDA involved exploring the user data to answer key questions, such as: 
+Exploring the user data to answer key questions, such as: 
 
 - What countries are the users located in?
 - What type of devices are used to watch Netflix?
@@ -32,12 +31,12 @@ EDA involved exploring the user data to answer key questions, such as:
 
 4) Mid adults (age 35-42) generate higher monthly revenue than young adults (age 26-34) and mature adults (age 43-51).
 
-5) Users located in the North American region typically spend more on Netflix on a month-to-month basis.
+5) Users located in the North American region generate the highest monthly revenue.
 
 
 #### Results / Findings
 
-1) Although the Premium subscription has the highest price point, users with Base subscriptions generate the most monthly revenue, followed by those with Standard subscriptions, and lastly, those with Premium subscriptions.
+1) Although the Premium subscription has the highest price point, users with Base subscriptions generate the most monthly revenue, followed by those with Standard subscriptions and lastly Premium subscriptions.
 
 2) Netflix can be accessed through four different devices: Smart TVs, laptops, smartphones, and tablets. Smart TVs and laptops are grouped as desktops, while smartphones and tablets fall under mobile devices. Data analysis indicates no correlation between device types and monthly revenue, with laptops generating the highest revenue and Smart TVs generating the lowest.
 
