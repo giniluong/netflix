@@ -55,7 +55,35 @@ ORDER BY monthly_revenue ASC
 
 	
 
--- #1: Users with Premium subscriptions generate higher monthly revenue compared to those with Base or Standard
+-- #1: Which plans are the most popular among different age groups?
+
+SELECT subscription_type,
+	COUNT(CASE WHEN age <= 34 then 1 END) AS 'Young Adults',
+	COUNT (CASE WHEN age BETWEEN 35 AND 42 THEN 1 END) AS 'Mid Adults',
+	COUNT (CASE WHEN age >= 43 THEN 1 END) AS 'Mature Adults'
+FROM NetflixUserbase AS AgeBrackets
+GROUP BY subscription_type
+
+
+-- #2: Determine the most popular devices used for streaming
+	
+SELECT device, SUM(monthly_revenue) AS TotalDevice
+FROM NetflixUserbase
+GROUP BY device
+ORDER BY TotalDevice DESC
+
+
+-- #3: Which devices are the most popular among different age groups?
+
+SELECT device,
+	COUNT(CASE WHEN age <= 34 then 1 END) AS 'Young Adults',
+	COUNT (CASE WHEN age BETWEEN 35 AND 42 THEN 1 END) AS 'Mid Adults',
+	COUNT (CASE WHEN age >= 43 THEN 1 END) AS 'Mature Adults'
+FROM NetflixUserbase AS AgeBrackets
+GROUP BY device
+
+
+-- #4: Which subscription tiers are the most profitable?
 
 SELECT subscription_type, SUM(monthly_revenue) AS TotalMonthlyRevenue
 FROM NetflixUserbase
@@ -63,40 +91,20 @@ GROUP BY subscription_type
 ORDER BY TotalMonthlyRevenue DESC
 
 
--- #2: Users who access Netflix primarily through desktop devices generate more revenue on average than those who access through mobile devices
+-- #5: Which markets are generating the most revenue?
 
-SELECT device, AVG(monthly_revenue) AS AvgRevenueDevice
-FROM NetflixUserbase
-GROUP BY device
-ORDER BY AvgRevenueDevice DESC
+-- By individual countries:
 
-
--- #3: On average older users are more likely to subscribe to Premium plans than younger users
-
-SELECT subscription_type, AVG(age) AS AvgAgeSubType
+SELECT country, SUM(monthly_revenue) AS CountryRevenue
 FROM NetflixUserbase
 GROUP BY subscription_type
-ORDER BY AvgAgeSubType DESC
-
-
--- #4: Mid adults (age 35-42) generate higher monthly revenue than young adults (age 26-34) and mature adults (age 43-51)
-
-SELECT CASE
-	WHEN age <= 34 then 'Young Adults'
-        WHEN age BETWEEN 35 AND 42 THEN 'Mid Adults'
-        WHEN age >= 43 THEN 'Mature Adults'
-      END AS AgeBracket,
-      SUM(monthly_revenue) AS SumRevenueAge
-FROM NetflixUserbase
-GROUP BY AgeBracket
-ORDER BY SumRevenueAge DESC
-
-
--- #5: Users located in the North American region typically spend more on Netflix on a month-to-month basis
-/* North America: Canada, United States, Mexico
-   Europe: United Kingdom, Spain, Italy, Germany, France
-   South America: Brazil
-   Australia & Oceania: Australia */
+ORDER BY CountryRevenue DESC
+	
+/* By World Regions:
+	North America: Canada, United States, Mexico
+	Europe: United Kingdom, Spain, Italy, Germany, France
+	South America: Brazil
+	Australia & Oceania: Australia */
 
 SELECT CASE
 	WHEN country IN('Canada', 'United States', 'Mexico') THEN 'North America'
@@ -108,8 +116,4 @@ SELECT CASE
 FROM NetflixUserbase
 GROUP BY WorldRegions
 ORDER BY SumRevenueRegion DESC
-
-
-
-
 
