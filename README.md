@@ -2,7 +2,7 @@
 
 ### Project Overview
 
-This data analysis project aims to offer insights into how user information influences Netflix's monthly revenue. I also examine various aspects of the data to identify trends and better understand Netflix and its user base.
+This data analysis project aims to offer insights into how user information influences Netflix's monthly revenue. I also examine various aspects of the data to identify trends and insights to make data-driven decisions.
 
 ### Data Source
 
