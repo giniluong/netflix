@@ -21,17 +21,23 @@ Exploring the user data to answer key questions, such as:
 ### Data Analysis
 
 
+#### Questions to Answer
+
+1) Which plans are the most popular among different age groups?
+2) Determine the most popular devices used for streaming
+3) Which devices are the most popular among different age groups?
+4) Which subscription tiers are the most profitable?
+5) Which markets are generating the most revenue?
+   
+
 ##### Hypothesis
 
-1) Users with Premium subscriptions generate higher monthly revenue compared to those with Base or Standard.
+1) Premium subscription plans are most popular for Mature adults, whereas the Basic plan is most popular for Young Adults.
+2) Users who access Netflix primarily through Desktops (Smart TVs & Laptops) generate more revenue than users who access via Mobile (Smartphone or tablet) devices.
+3) Smart TVs are most popular for Mature adults, whereas smartphones are most popular for Young adults.
+4) Users with Premium subscriptions generate higher monthly revenue compared to those with Base or Standard.
+5) The United States and Canada generate the most revenue.
 
-2) Users who access Netflix primarily through Desktops generate more monthly revenue than those who access Mobile devices.
-
-3) On average older users are more likely to subscribe to Premium plans than younger users.
-
-4) Mid adults (age 35-42) generate higher monthly revenue than young adults (age 26-34) and mature adults (age 43-51).
-
-5) Users located in the North American region generate the highest monthly revenue.
 
 
 #### Results / Findings
