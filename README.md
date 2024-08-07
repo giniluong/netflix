@@ -42,12 +42,17 @@ Exploring the user data to answer key questions, such as:
 
 #### Results / Findings
 
-1) Although the Premium subscription has the highest price point, users with Base subscriptions generate the most monthly revenue, followed by those with Standard subscriptions and lastly Premium subscriptions.
+1) I predicted that mature adults would have a larger budget to purchase the premium plan. However, the premium plan is actually most popular among young adults, while the basic plan is more popular among mature adults.
 
-2) Netflix can be accessed through four different devices: Smart TVs, laptops, smartphones, and tablets. Smart TVs and laptops are grouped as desktops, while smartphones and tablets fall under mobile devices. Data analysis indicates no correlation between device types and monthly revenue, with laptops generating the highest revenue and Smart TVs generating the lowest.
+This suggests that the price points for plans do not correlate with age. Therefore, we can tailor marketing strategies to highlight the features of the subscription plans that appeal to different age groups.
 
-3) Analyzing the average age of users for each subscription model reveals that the ages are quite similar, around 38 or 39 years. Interestingly, Premium users have the lowest average age, while Standard users have the highest average age.
+2) Laptops and tablets are the most popular devices for streaming. To capitalize on this, we can optimize the user experience for these two device types since they generate the most revenue. Additionally, we can develop features and promotions specifically for laptops and tablets to further expand our user base.
 
-4) When grouping users into age brackets, it becomes evident that mature adults aged 43-51 generate the highest monthly revenue, while young adults under 34 generate the lowest.
+3) I predicted that mature adults would primarily access Netflix through Smart TVs, which is accurate. However, smartphones are most popular with mid adults rather than young adults. Despite this, I believe there is a correlation between device types and age.
+  
+By leveraging this demographic and subscription data, we can create targeted marketing campaigns, such as promoting family plans to households and mobile-specific offers to younger users.
 
-5) I categorized the users based on their world regions and found that most users are located in Europe, which generates the highest monthly revenue, followed by North America.
+4) The basic plan is the most profitable tier, followed by the standard and then the premium plan. We can enhance marketing efforts to promote the basic plan in order to increase its revenue.
+   
+5) The United States generates the most revenue, followed by the United Kingdom and then Canada. To increase the user base, we can intensify marketing efforts in these countries. Additionally, I categorized users based on their world regions and found that most users are located in Europe. This suggests that although North America has fewer users, it remains highly profitable.
+
