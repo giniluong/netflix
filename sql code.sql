@@ -1,8 +1,8 @@
 -- Analysis of Netflix Userbase Dataset
 
 
-/** EXPLORATORY DATA ANALYSIS **/
 
+/** EXPLORATORY DATA ANALYSIS **/
 
 
 -- Check the number of unique users in the dataset
@@ -51,10 +51,10 @@ GROUP BY monthly_revenue
 ORDER BY monthly_revenue ASC
 
 
+	
 /** DATA ANALYSIS **/
 
 	
-
 -- #1: Which plans are the most popular among different age groups?
 
 SELECT subscription_type,
